@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  # backend:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   env_file:
+  #     - .env
+  #   # volumes:
+  #   #   - .:/usr/src/app/compare_configs
+  #   ports:
+  #     - "8000:8000"
+  #   depends_on:
+  #     - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    env_file:
+      - .env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
+    stdin_open: true
+    tty: true
+    restart: always
+    volumes:
+      - mongo:/data/db
+    ports:
+      - "27018:27017"
+
+volumes:
+  mongo:
+    driver: local

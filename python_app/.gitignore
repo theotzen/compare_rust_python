@@ -1,0 +1,8 @@
+__pycache__
+.env
+logs/
+db/
+example_body.py
+.idea/
+/venv/
+./env

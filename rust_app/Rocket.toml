@@ -1,0 +1,9 @@
+[debug]
+address = "0.0.0.0"
+log_level = "debug"
+port = 8000
+
+[release]
+address = "0.0.0.0"
+log_level = "debug"
+port = 8000
