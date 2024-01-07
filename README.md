@@ -12,8 +12,8 @@ The `rust_app` directory contains the Rust implementation of the backend applica
 
 Key features of the `rust_app` include:
 
-- Use of the Rocket framework for handling HTTP requests and responses.
-- Implementation of the Octocrab crate to interact with the GitHub API.
+- Use of the [Rocket framework]([url](https://rocket.rs/)) for handling HTTP requests and responses.
+- Implementation of the [Octocrab crate]([url](https://github.com/XAMPPRocky/octocrab)) to interact with the GitHub API.
 - Efficient algorithms for comparing YAML configurations using Rust's powerful type system and performance-oriented features.
 
 ### `python_app`
@@ -22,8 +22,8 @@ The `python_app` directory houses the Python version of the backend application.
 
 Highlights of the `python_app` include:
 
-- FastAPI framework for building APIs with Python 3.7+.
-- Utilization of the PyGithub library for GitHub API communication.
+- [FastAPI framework]([url](https://fastapi.tiangolo.com/)) for building APIs with Python 3.7+.
+- Utilization of the [PyGithub library]([url](https://github.com/PyGithub/PyGithub)) for GitHub API communication.
 - Simple and readable code for fetching and comparing YAML files, showcasing Python's developer-friendly syntax.
 
 ## Purpose of the Article
